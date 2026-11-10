@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { CommitGrid, HoverLift, Reveal, StaggerGroup, StaggerItem, TypeReveal } from "@/components/motion";
 
-const INSTAGRAM_URL = "https://www.instagram.com/issei.kurashi.kaizen/";
+const INSTAGRAM_URL = "https://www.instagram.com/issei.web.aomori/";
 
 const works = [
   {
@@ -338,7 +338,7 @@ export default function Home() {
           <span>
             Instagram:{" "}
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="underline">
-              @issei.kurashi.kaizen
+              @issei.web.aomori
             </a>
           </span>
           <span className="mt-4">© 2026 issei</span>
