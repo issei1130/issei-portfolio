@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  ArrowUpRight,
   Code2,
   MapPin,
   MessageCircle,
@@ -14,39 +15,34 @@ const INSTAGRAM_URL = "https://www.instagram.com/issei.kurashi.kaizen/";
 
 const works = [
   {
-    name: "飛翔塾",
     genre: "学習塾",
-    image: "/works/juku.jpg",
+    image: "/works/school.jpg",
     url: "https://juku-hp-template.vercel.app/",
-    description: "青森市富田地区、30年以上の指導実績を持つ個別学習塾。地域密着の信頼感を軸に設計。",
+    description: "長年の指導実績という信頼感を軸に、保護者が知りたい順に情報を並べた構成。",
   },
   {
-    name: "はまなすピアノ教室",
     genre: "ピアノ教室",
-    image: "/works/hamanasu.jpg",
+    image: "/works/piano.jpg",
     url: "https://hamanasu-piano-template.vercel.app/",
-    description: "松原・はまなす2会場の個人ピアノ教室。旋律をモチーフにした装飾と温かみのある配色。",
+    description: "旋律をモチーフにした装飾と、温かみのある配色。教室の雰囲気が先に伝わるように。",
   },
   {
-    name: "トリミングサロン マニマニ",
-    genre: "ペットトリミング",
-    image: "/works/manimani.jpg",
+    genre: "トリミングサロン",
+    image: "/works/grooming.jpg",
     url: "https://manimani-trimming-template.vercel.app/",
-    description: "青森市南佃のトリミングサロン。わんちゃんへの愛情が伝わる、やわらかく力強いタイポグラフィ。",
+    description: "やわらかさと力強さを両立した書体。予約までの道筋を最短にした設計。",
   },
   {
-    name: "Cucina italiana Catari,Catari",
     genre: "料理教室",
-    image: "/works/catari.jpg",
+    image: "/works/cooking.jpg",
     url: "https://catari-catari-template.vercel.app/",
-    description: "本場イタリアで修行したシェフの料理教室。素材の温度感を活かしたアースカラーで構成。",
+    description: "素材の温度感を活かしたアースカラー。コースの内容と料金が迷わず分かる構成。",
   },
   {
-    name: "Betty.",
-    genre: "まつげエクステサロン",
-    image: "/works/betty.jpg",
+    genre: "まつげサロン",
+    image: "/works/lash.jpg",
     url: "https://miki-betty-lash-template.vercel.app/",
-    description: "全国大会入賞歴を持つまつげエクステサロン。確かな技術を静かな自信で伝えるデザイン。",
+    description: "静かな自信が伝わる余白と書体。予約手段へすぐに届く導線。",
   },
 ];
 
@@ -189,30 +185,31 @@ export default function Home() {
               <span className="font-mono text-xs tracking-wide text-brand-dark">WORKS</span>
               <h2 className="mt-2 font-heading text-3xl font-black text-ink sm:text-4xl">制作実績(ご提案デモ)</h2>
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft">
-                いずれも、青森市内の実在するお店・教室に向けて先にお作りしたご提案用のデモサイトです。
-                正式に契約・公開済みのものではなく、ご興味を持っていただけた場合に内容を調整のうえ公開します。
+                いずれも、青森市内のお店・教室に向けて先にお作りしたご提案用のデモサイトです。
+                正式に契約・公開済みのものではないため、ここでは店名を伏せ、業種名でご紹介しています。
               </p>
             </Reveal>
 
             <StaggerGroup className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3" stagger={0.1}>
               {works.map((w) => (
-                <StaggerItem key={w.name}>
+                <StaggerItem key={w.genre}>
                   <HoverLift className="group h-full overflow-hidden rounded-2xl border border-border-soft bg-surface shadow-sm">
                     <Link href={w.url} target="_blank" rel="noopener noreferrer">
-                      <div className="relative aspect-[4/3] overflow-hidden border-b border-border-soft bg-background">
+                      <div className="relative aspect-[16/9] overflow-hidden border-b border-border-soft bg-background">
                         <Image
                           src={w.image}
-                          alt={`${w.name}のデモサイト`}
+                          alt={`${w.genre}向けデモサイトの画面`}
                           fill
-                          className="object-cover object-top transition duration-500 group-hover:scale-105"
+                          className="object-cover object-left-top transition duration-500 group-hover:scale-105"
                           sizes="(min-width: 1024px) 360px, (min-width: 640px) 45vw, 90vw"
                         />
                       </div>
                       <div className="p-5">
                         <div className="flex items-center justify-between gap-2">
-                          <span className="font-heading text-base font-bold text-ink">{w.name}</span>
-                          <span className="rounded-full bg-accent-soft px-2.5 py-1 text-[11px] font-medium text-accent">
-                            {w.genre}
+                          <span className="font-heading text-base font-bold text-ink">{w.genre}</span>
+                          <span className="inline-flex items-center gap-1 font-mono text-[11px] tracking-wide text-brand-dark">
+                            DEMO
+                            <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2} />
                           </span>
                         </div>
                         <p className="mt-2 text-sm leading-relaxed text-ink-soft">{w.description}</p>
