@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowUpRight,
-  Code2,
   MapPin,
   MessageCircle,
   RefreshCcw,
@@ -92,7 +91,7 @@ export default function Home() {
     <>
       <header className="sticky top-0 z-20 border-b border-border-soft bg-surface/95 shadow-sm backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <span className="font-mono text-lg font-bold tracking-tight text-ink">issei</span>
+          <Image src="/logo.png" alt="issei" width={445} height={173} priority className="h-8 w-auto" />
           <nav className="hidden items-center gap-8 text-sm font-medium text-ink-soft md:flex">
             <a href="#works" className="hover:text-brand">制作実績</a>
             <a href="#pricing" className="hover:text-brand">料金</a>
@@ -330,10 +329,7 @@ export default function Home() {
 
       <footer className="border-t border-border-soft bg-background">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-10 text-sm text-foreground/60">
-          <span className="flex items-center gap-2 font-mono font-semibold text-ink">
-            <Code2 className="h-4 w-4" strokeWidth={2} />
-            issei
-          </span>
+          <Image src="/logo.png" alt="issei" width={445} height={173} className="mb-2 h-9 w-auto self-start" />
           <span>青森市 / Webコーダー</span>
           <span>
             Instagram:{" "}
