@@ -48,22 +48,20 @@ const WORKS: Work[] = [
     isNew: true,
   },
   {
+    genre: "イタリア料理教室",
+    place: "青森市",
+    image: "/works/cooking.webp",
+    url: "https://catari-catari-template.vercel.app/",
+    description: "イタリアの地図をスクロールでたどり、土地ごとの家庭料理から青森の食材へ。メニュー表の形の「今月の教室」と、日にちと人数を選ぶとDMの文面ができる申し込み欄。",
+    isNew: true,
+  },
+  {
     genre: "学習塾",
     place: "青森市",
     image: "/works/school.jpg",
     url: "https://juku-hp-template.vercel.app/",
     description: "長年の指導実績という信頼感を軸に、保護者が知りたい順に情報を並べた構成。",
   },
-
-
-  {
-    genre: "料理教室",
-    place: "青森市",
-    image: "/works/cooking.jpg",
-    url: "https://catari-catari-template.vercel.app/",
-    description: "素材の温度感を活かしたアースカラー。コースの内容と料金が迷わず分かる構成。",
-  },
-
 ];
 
 function Card({ w }: { w: Work }) {
