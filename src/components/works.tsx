@@ -24,6 +24,14 @@ const WORKS: Work[] = [
     isNew: true,
   },
   {
+    genre: "まつげサロン",
+    place: "青森市浪岡",
+    image: "/works/lash.webp",
+    url: "https://miki-betty-lash-template.vercel.app/",
+    description: "楕円の鏡の中で、目元にまつげが1本ずつ描かれていく。悩みを選ぶとまつげの形が変わる「似合うを探す」仕掛けと、LINE予約の文面をコピーできるボタン。",
+    isNew: true,
+  },
+  {
     genre: "学習塾",
     place: "青森市",
     image: "/works/school.jpg",
@@ -51,13 +59,7 @@ const WORKS: Work[] = [
     url: "https://catari-catari-template.vercel.app/",
     description: "素材の温度感を活かしたアースカラー。コースの内容と料金が迷わず分かる構成。",
   },
-  {
-    genre: "まつげサロン",
-    place: "青森市",
-    image: "/works/lash.jpg",
-    url: "https://miki-betty-lash-template.vercel.app/",
-    description: "静かな自信が伝わる余白と書体。予約手段へすぐに届く導線。",
-  },
+
 ];
 
 function Card({ w }: { w: Work }) {
