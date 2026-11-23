@@ -249,37 +249,42 @@ export default function Home() {
               <span className="font-mono text-xs tracking-wide text-brand-dark">PRICING</span>
               <h2 className="mt-2 font-heading text-3xl font-black text-ink sm:text-4xl">料金</h2>
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft">
-                モニター価格ではなく、最初から適正価格でご案内しています。内容はお店の状況に合わせて個別にご相談いただけます。
+                料金はひとつだけ。最初から適正価格でご案内しています。お支払いは、公開できる状態になってからです。
               </p>
             </Reveal>
 
             <StaggerGroup className="mt-10 grid gap-6 lg:grid-cols-3">
               <StaggerItem>
-                <div className="flex h-full flex-col rounded-2xl border border-border-soft bg-surface p-7">
-                  <span className="w-fit rounded-full bg-badge-standard/10 px-3 py-1 text-xs font-semibold text-badge-standard">
-                    スタンダード
+                <div className="flex h-full flex-col rounded-2xl border-2 border-brand bg-surface p-7 shadow-md">
+                  <span className="w-fit rounded-full bg-badge-premium/10 px-3 py-1 text-xs font-semibold text-badge-premium">
+                    基本プラン
                   </span>
-                  <p className="mt-5 font-heading text-3xl font-black text-ink">98,000円〜</p>
-                  <p className="mt-1 text-sm text-ink-soft">+ 月額 12,000円</p>
+                  <p className="mt-5 font-heading text-3xl font-black text-ink">
+                    77,000円<span className="ml-1 text-sm font-semibold text-ink-soft">(税込)</span>
+                  </p>
+                  <p className="mt-1 text-sm text-ink-soft">+ 月額 5,500円(税込)</p>
                   <ul className="mt-6 flex-1 space-y-2 text-sm text-ink-soft">
-                    <li>・公開後の運用・保守</li>
-                    <li>・月次の文言/写真更新代行</li>
-                    <li>・Googleビジネスプロフィール整備</li>
+                    <li>・トップページ+下層4ページまで</li>
+                    <li>・文章はこちらで書きます(修正2回まで)</li>
+                    <li>・お知らせは、スマホからご自分で更新できます</li>
+                    <li>・電話・LINE・Instagram・地図へのボタン</li>
+                    <li>・独自ドメインとGoogle検索の設定</li>
+                    <li>・公開から1か月は、細かい直しが無料</li>
                   </ul>
                 </div>
               </StaggerItem>
 
               <StaggerItem>
-                <div className="flex h-full flex-col rounded-2xl border-2 border-brand bg-surface p-7 shadow-md">
-                  <span className="w-fit rounded-full bg-badge-premium/10 px-3 py-1 text-xs font-semibold text-badge-premium">
-                    プレミアム
+                <div className="flex h-full flex-col rounded-2xl border border-border-soft bg-surface p-7">
+                  <span className="w-fit rounded-full bg-badge-standard/10 px-3 py-1 text-xs font-semibold text-badge-standard">
+                    月額に含まれるもの
                   </span>
-                  <p className="mt-5 font-heading text-3xl font-black text-ink">148,000円〜</p>
-                  <p className="mt-1 text-sm text-ink-soft">+ 月額 25,000円</p>
                   <ul className="mt-6 flex-1 space-y-2 text-sm text-ink-soft">
-                    <li>・スタンダードの内容すべて</li>
-                    <li>・予約/LINE導線の構築</li>
-                    <li>・口コミを集める仕組み、季節ページ追加</li>
+                    <li>・サーバー代、ドメイン代</li>
+                    <li>・表示の不具合の修正</li>
+                    <li>・月1回の更新(文言や写真の差し替え)</li>
+                    <li>・LINEかDMでひと言。3営業日以内に反映</li>
+                    <li>・最低12か月。解約は1か月前までにご連絡ください</li>
                   </ul>
                 </div>
               </StaggerItem>
@@ -287,14 +292,12 @@ export default function Home() {
               <StaggerItem>
                 <div className="flex h-full flex-col rounded-2xl border border-border-soft bg-surface p-7">
                   <span className="w-fit rounded-full bg-badge-installment/10 px-3 py-1 text-xs font-semibold text-badge-installment">
-                    分割プラン
+                    必要なときだけ
                   </span>
-                  <p className="mt-5 font-heading text-3xl font-black text-ink">初期0円</p>
-                  <p className="mt-1 text-sm text-ink-soft">月額 18,000円(最低24ヶ月)</p>
                   <ul className="mt-6 flex-1 space-y-2 text-sm text-ink-soft">
-                    <li>・スタンダードと同内容</li>
-                    <li>・初期費用を抑えたい方向け</li>
-                    <li>・24ヶ月総額はスタンダードより高くなります</li>
+                    <li>・ページの追加 1ページ 11,000円</li>
+                    <li>・同じ月の2回目からの更新 1回 3,300円</li>
+                    <li>・お店が指定するサーバーへの設置 +22,000円</li>
                   </ul>
                 </div>
               </StaggerItem>
