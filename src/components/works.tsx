@@ -40,6 +40,14 @@ const WORKS: Work[] = [
     isNew: true,
   },
   {
+    genre: "トリミングサロン",
+    place: "青森市",
+    image: "/works/grooming.webp",
+    url: "https://manimani-trimming-template.vercel.app/",
+    description: "スクロールで、泡が立ち、ハサミが動き、星がきらめく。投稿に添えられた1匹ずつのひと言を集めた「わんちゃん日記」と、ハサミを動かして見比べるビフォーアフター。",
+    isNew: true,
+  },
+  {
     genre: "学習塾",
     place: "青森市",
     image: "/works/school.jpg",
@@ -47,13 +55,7 @@ const WORKS: Work[] = [
     description: "長年の指導実績という信頼感を軸に、保護者が知りたい順に情報を並べた構成。",
   },
 
-  {
-    genre: "トリミングサロン",
-    place: "青森市",
-    image: "/works/grooming.jpg",
-    url: "https://manimani-trimming-template.vercel.app/",
-    description: "やわらかさと力強さを両立した書体。予約までの道筋を最短にした設計。",
-  },
+
   {
     genre: "料理教室",
     place: "青森市",
