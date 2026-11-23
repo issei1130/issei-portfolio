@@ -32,19 +32,21 @@ const WORKS: Work[] = [
     isNew: true,
   },
   {
+    genre: "ピアノ教室",
+    place: "青森市",
+    image: "/works/piano.webp",
+    url: "https://hamanasu-piano-template.vercel.app/",
+    description: "星空の五線に、スクロールできらきら星の音符が置かれていく。光る鍵盤を順に押すと音が鳴って一曲弾けるしかけと、曜日を押すと通える会場が分かる表。",
+    isNew: true,
+  },
+  {
     genre: "学習塾",
     place: "青森市",
     image: "/works/school.jpg",
     url: "https://juku-hp-template.vercel.app/",
     description: "長年の指導実績という信頼感を軸に、保護者が知りたい順に情報を並べた構成。",
   },
-  {
-    genre: "ピアノ教室",
-    place: "青森市",
-    image: "/works/piano.jpg",
-    url: "https://hamanasu-piano-template.vercel.app/",
-    description: "旋律をモチーフにした装飾と、温かみのある配色。教室の雰囲気が先に伝わるように。",
-  },
+
   {
     genre: "トリミングサロン",
     place: "青森市",
