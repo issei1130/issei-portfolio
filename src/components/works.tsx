@@ -58,9 +58,10 @@ const WORKS: Work[] = [
   {
     genre: "学習塾",
     place: "青森市",
-    image: "/works/school.jpg",
+    image: "/works/school.webp",
     url: "https://juku-hp-template.vercel.app/",
-    description: "長年の指導実績という信頼感を軸に、保護者が知りたい順に情報を並べた構成。",
+    description: "ノートの紙ひこうきが、スクロールで点数のグラフを上っていく。気になることにチェックすると塾の向き合い方が出る仕掛けと、学年を選ぶと月謝が全部わかる授業料の表。",
+    isNew: true,
   },
 ];
 
